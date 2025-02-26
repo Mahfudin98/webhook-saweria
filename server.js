@@ -21,7 +21,7 @@ app.post("/webhook/saweria", async (req, res) => {
       );
 
       // Kirim perintah ke Wemos
-      await axios.get(`${WEMOS_IP}/trigger`);
+      await axios.get("http://192.168.1.225/trigger");
     }
 
     res.json({ success: true, message: "Webhook diterima" });
