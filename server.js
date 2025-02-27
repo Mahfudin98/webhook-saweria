@@ -7,7 +7,7 @@ app.use(express.json());
 app.post("/webhook", async (req, res) => {
   try {
     const response = await axios.get(
-      "https://2da6-2001-448a-3003-2faa-a92a-de6f-6915-2093.ngrok-free.app/trigger"
+      "https://4a5f-27-131-249-118.ngrok-free.app/trigger"
     );
     res.json({ success: true, data: response.data });
   } catch (error) {
